@@ -1,3 +1,4 @@
+cask "docker"
 cask "java"
 
 tap "facebook/fb"
