@@ -69,6 +69,10 @@ if type rbenv > /dev/null; then
   eval "$(rbenv init -)"
 fi
 
+# pyenv
+export PATH="/Users/username/.pyenv:$PATH"
+eval "$(pyenv init -)"
+
 # Default Editor
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
