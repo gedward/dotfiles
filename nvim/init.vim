@@ -148,6 +148,10 @@ cabbrev WQ wq
 nnoremap <C-N> :bnext<CR>
 nnoremap <C-P> :bprev<CR>
 
+" Tab for Next
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
 "##############################################################################
 "# AUTOCMDS
 "##############################################################################
