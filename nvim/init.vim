@@ -194,11 +194,11 @@ augroup END
 "# PLUGIN SETTINGS
 "##############################################################################
 
-"Racer
-let g:rustfmt_autosave = 0
-let g:racer_cmd = "~/.cargo/bin/racer"
+"Deoplete
+let g:deoplete#enable_at_startup = 1
 let g:racer_experimental_completer = 1
-let $RUST_SRC_PATH= "/usr/local/src/rust"
+let g:racer_cmd = "$HOME/.cargo/bin/racer"
+let g:rustfmt_autosave = 0
 
 au FileType rust nmap gd <Plug>(rust-def)
 au FileType rust nmap gs <Plug>(rust-def-split)
@@ -282,7 +282,6 @@ let g:test#strategy = 'neoterm'
 let g:neoterm_clear_cmd = "clear; printf '=%.0s' {1..80}; clear"
 let g:neoterm_position = "horizontal"
 let g:neoterm_automap_keys = ",tt"
-let g:neoterm_split_on_tnew = 1
 let g:neoterm_size = 20
 let g:neoterm_autoscroll = 1
 
