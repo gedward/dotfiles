@@ -12,8 +12,7 @@ if [ -n "${TMUX-}" ]; then
 fi
 
 # Setup code directory
-mkdir -p ~/code/home/upto
-mkdir -p ~/code/work
+mkdir -p ~/code
 
 # Install essentials when necessary
 if [[ $(/usr/bin/gcc 2>&1) =~ "no developer tools were found" ]] || [[ ! -x /usr/bin/gcc ]]; then
@@ -100,25 +99,6 @@ git_clone ()
     echo "$DIR_PATH/$REPO already exists, skipping"
   fi
 }
-
-procore_clone ()
-{
-  git_clone "procore" "$1" "$HOME/code/work"
-}
-
-upto_clone ()
-{
-  git_clone "upto" "$1" "$HOME/code/home/upto"
-}
-
-PROCORE_REPOS=("procore" "ios" "puppet")
-for repo in $PROCORE_REPOS; do procore_clone "$repo"; done
-
-UPTO_REPOS=("cocoamates-marketing" "leads-marketing" "contact-us" "scripts" "telepictionary-ios")
-for repo in $UPTO_REPOS; do upto_clone "$repo"; done
-
-UPTO_APPS=("log-rx" "conner" "room-tracker")
-for repo in $UPTO_APPS; do upto_clone "${repo}-backend"; upto_clone "${repo}-ios"; done
 
 ## Language specific installations
 
