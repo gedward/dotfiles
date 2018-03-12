@@ -110,10 +110,6 @@ if [ -d "$HOME/.cargo" ]; then
   source "$HOME/.cargo/env"
 fi
 
-# NVM
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
-
 # Kiex
 [ -f "$HOME/.kiex/scripts/kiex" ] && source "$HOME/.kiex/scripts/kiex"
 

@@ -44,7 +44,7 @@ cp git/ctags_hook "$HOME/.git_template/hooks/post-checkout"
 rcup -f -d "$HOME/code/dotfiles"
 . "$HOME/.zshrc"
 
-SERVICES=("postgresql" "elasticsearch" "memcached" "redis")
+SERVICES=("postgresql" "memcached" "redis")
 for service in "${SERVICES[@]}"; do brew services start "$service"; done
 
 # Set default shell
