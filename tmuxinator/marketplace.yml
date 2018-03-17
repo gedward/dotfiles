@@ -1,0 +1,11 @@
+name: marketplace
+root: ./
+
+windows:
+  - nvim: nvim
+  - git:
+      layout: even-vertical
+      panes:
+        - bin/rails console
+        - #
+  - server: bin/rails server Puma

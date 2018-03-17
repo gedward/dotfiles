@@ -1,0 +1,6 @@
+name: dev
+root: ./
+
+windows:
+  - nvim: nvim
+  - git:

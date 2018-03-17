@@ -1,0 +1,13 @@
+name: js
+root: ./
+
+pre_window: nvm use stable
+
+windows:
+  - nvim: nvim
+  - git:
+      layout: even-vertical
+      panes:
+        - npm test:watch
+        - #
+  - server: npm run dev

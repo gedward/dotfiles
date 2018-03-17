@@ -245,6 +245,9 @@ let g:neomake_cargocheck_maker = {
       \ neomake#makers#ft#rust#rustc()['errorformat'],
       \ }
 
+" Disable netrw
+let g:netrw_dirhistmax = 0
+
 "replace 'f' with 1-char Sneak
 nmap f <Plug>Sneak_f
 nmap F <Plug>Sneak_F
