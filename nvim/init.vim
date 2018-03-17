@@ -60,14 +60,10 @@ set listchars=tab:·\ ,trail:█
 " Color
 set termguicolors
 
-if $LIGHT_SHELL
-  "Light
-  set background=light
-  colorscheme gruvbox
-else
-  " "Dark
-  set background=dark
-  colorscheme gruvbox
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+  colorscheme base16-github
 endif
 
 syntax enable
