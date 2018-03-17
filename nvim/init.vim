@@ -296,6 +296,9 @@ function! RenameFile()
 endfunction
 map <Leader>n :call RenameFile()<cr>
 
+" argwrap
+nnoremap <silent> <leader>a :ArgWrap<CR>
+
 "##############################################################################
 "# PROMOTE VARIABLE TO RSPEC LET
 "##############################################################################
