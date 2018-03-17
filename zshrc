@@ -16,35 +16,34 @@ alias updatedb="/usr/libexec/locate.updatedb"
 # tmux
 alias tma="tmux att -t"
 alias tmls="tmux ls"
-alias t2="tmux -2"
 
 # Bundler
 alias b="bundle"
 alias be="bundle exec"
-
-# Rails
-alias migrate="bin/rake db:migrate"
-alias rake="bin/rake"
 
 # Elixir
 alias imix="iex -S mix"
 alias server="iex -S mix phoenix.server"
 
 # Git
-alias g="git"
 alias co="git checkout"
-alias gco="git checkout"
-alias gcm="git checkout master"
-alias gst="git status"
-alias gs="git status"
-alias gpush="git push"
-alias gpull="git pull"
-alias gpoh="git push origin HEAD"
-alias gsu="git submodule update"
+alias g="git"
 alias gap="git add -p"
-alias grm="git pull --rebase origin master"
-alias gupdate="git pull && git-clean -y"
 alias gc="git commit -v"
+alias gcm="git checkout master"
+alias gco="git checkout"
+alias gp="git push origin HEAD"
+alias gpoh="git push origin HEAD"
+alias gpull="git pull"
+alias gpush="git push"
+alias grm="git pull --rebase origin master"
+alias gs="git status"
+alias gst="git status"
+alias gsu="git submodule update"
+alias gupdate="git pull && git-clean -y"
+alias s="git status"
+
+# Vim
 alias vim="nvim"
 
 ## User configuration ##
