@@ -41,7 +41,7 @@ cp git/ctags_hook "$HOME/.git_template/hooks/post-merge"
 cp git/ctags_hook "$HOME/.git_template/hooks/post-checkout"
 
 # Dotfiles
-rcup -f -d "$HOME/code/dotfiles"
+rcup -f -d "$HOME/code/personal/dotfiles"
 . "$HOME/.zshrc"
 
 SERVICES=("postgresql" "memcached" "redis")
@@ -57,7 +57,7 @@ rehash
 
 #setup neovim
 mkdir -p $HOME/.config
-ln -sf ~/code/dotfiles/nvim ~/.config/
+ln -sf ~/code/personal/dotfiles/nvim ~/.config/
 
 # Setup GOPATH
 mkdir -p /usr/local/opt/gocode
