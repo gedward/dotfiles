@@ -54,6 +54,9 @@ export SAVEHIST=10000
 export HISTFILE=~/.history
 setopt SHARE_HISTORY
 
+# Emacs
+set -o emacs
+
 # Path VARs
 export GOPATH="$HOME/code/gocode:/code/work/pgnetdetective"
 export PATH="/usr/local/bin:/usr/bin:/usr/local/bin:$PATH"
