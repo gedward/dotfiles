@@ -16,6 +16,7 @@ alias updatedb="/usr/libexec/locate.updatedb"
 # tmux
 alias tma="tmux att -t"
 alias tmls="tmux ls"
+alias mux="tmuxinator"
 
 # Bundler
 alias b="bundle"
