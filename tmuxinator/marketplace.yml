@@ -1,5 +1,5 @@
 name: marketplace
-root: ./
+root: ~/code/procore/marketplace
 
 windows:
   - nvim: nvim
@@ -9,3 +9,11 @@ windows:
         - bin/rails console
         - #
   - server: bin/rails server Puma
+  - procore:
+      root: ~/code/procore/procore
+      panes:
+        - bin/rails server Puma -p 3001
+  - procore:
+      root: ~/code/procore/login
+      panes:
+        - bin/rails server Puma -p 4000
