@@ -228,23 +228,6 @@ let g:alchemist#elixir_erlang_src = "/usr/local/share/src"
 "Elm
 let g:elm_format_autosave = 1
 
-"Neomake
-let g:neomake_ruby_rdirty_maker = {
-      \ 'exe': 'dirty',
-      \ 'args': ['--format', 'emacs'],
-      \ 'errorformat': '%f:%l:%c: %t: %m',
-      \ 'postprocess': function('neomake#makers#ft#ruby#RubocopEntryProcess')
-      \ }
-let g:neomake_ruby_enabled_makers = ['mri', 'rdirty']
-let g:neomake_rust_enabled_makers = []
-
-let g:neomake_cargocheck_maker = {
-      \ 'exe': 'cargo',
-      \ 'args': ['check'],
-      \ 'errorformat':
-      \ neomake#makers#ft#rust#rustc()['errorformat'],
-      \ }
-
 " Disable netrw
 let g:netrw_dirhistmax = 0
 
