@@ -63,7 +63,6 @@ set termguicolors
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
   source ~/.vimrc_background
-  colorscheme base16-github
 endif
 
 syntax enable
@@ -174,6 +173,10 @@ augroup END
 augroup neomake_cmds
   autocmd BufWritePost * Neomake
   autocmd BufWritePost *.rs Neomake! cargocheck
+augroup END
+
+augroup elm
+  autocmd FileType elm map <Leader>t ElmTest<CR>
 augroup END
 
 " Remove trailing whitespace on save
