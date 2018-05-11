@@ -1,0 +1,19 @@
+name: dev-portal
+root: ~/code/procore/dev-portal
+
+windows:
+  - nvim: nvim
+  - git:
+      layout: even-vertical
+      panes:
+        - bin/rails console
+        - #
+  - server: bin/rails server Puma
+  - procore:
+      root: ~/code/procore/procore
+      panes:
+        - bin/rails server Puma -p 3001
+  - login:
+      root: ~/code/procore/login
+      panes:
+        - bin/rails server Puma -p 4000

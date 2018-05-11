@@ -1,0 +1,15 @@
+name: buildr-sync
+root: ~/code/buildr/sync
+
+windows:
+  - nvim: nvim
+  - git:
+      layout: even-vertical
+      panes:
+        - bin/rails console
+        - #
+  - server:
+      layout: even-vertical
+      panes:
+        - bin/rails server
+        - be sidekiq

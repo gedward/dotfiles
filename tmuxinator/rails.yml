@@ -1,0 +1,13 @@
+name: rails
+
+windows:
+  - nvim: nvim
+  - git:
+      layout: even-vertical
+      panes:
+        - bin/rails console
+        - #
+  - server:
+      layout: even-vertical
+      panes:
+        - bin/rails server
