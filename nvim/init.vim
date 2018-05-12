@@ -262,7 +262,7 @@ nnoremap <Leader>tl :call neoterm#clear()<CR>
 " kills the current job (send a <c-c>)
 nnoremap <Leader>tc :call neoterm#kill()<CR>
 
-let g:test#strategy = 'neoterm'
+let test#strategy = 'basic'
 
 let g:neoterm_clear_cmd = "clear; printf '=%.0s' {1..80}; clear"
 let g:neoterm_automap_keys = ",tt"
