@@ -34,6 +34,7 @@ brew bundle --verbose
 brew upgrade
 
 # Git setup
+echo "Setting up git"
 mkdir -p "$HOME/.git_template/hooks"
 cp git/ctags "$HOME/.git_template/hooks/ctags"
 cp git/ctags_hook "$HOME/.git_template/hooks/post-commit"
@@ -41,9 +42,11 @@ cp git/ctags_hook "$HOME/.git_template/hooks/post-merge"
 cp git/ctags_hook "$HOME/.git_template/hooks/post-checkout"
 
 # Dotfiles
+echo "Setting up dotfiles"
 rcup -f -d "$HOME/code/personal/dotfiles"
 . "$HOME/.zshrc"
 
+echo "Brew services"
 SERVICES=("postgresql" "memcached" "redis")
 for service in "${SERVICES[@]}"; do brew services start "$service"; done
 
