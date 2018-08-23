@@ -72,6 +72,10 @@ if type rbenv > /dev/null; then
   eval "$(rbenv init -)"
 fi
 
+# Setup nodenv
+export PATH="$HOME/.nodenv/bin:$PATH"
+eval "$(nodenv init -)"
+
 # pyenv
 export PATH="/Users/username/.pyenv:$PATH"
 eval "$(pyenv init -)"
