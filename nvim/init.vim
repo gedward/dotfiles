@@ -225,7 +225,9 @@ command! -bang -nargs=* Rg
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
 
-"Elixir alchemist
+"Elixir
+let g:mix_format_on_save = 1
+let g:alchemist_keyword_map = '<leader>K'
 let g:alchemist#elixir_erlang_src = "/usr/local/share/src"
 
 "Elm

@@ -43,6 +43,7 @@ Plug 'tpope/vim-rails', { 'for': 'ruby' }
 Plug 'ElmCast/elm-vim', { 'for': 'elm' }
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'racer-rust/vim-racer', { 'for': 'rust' }
+Plug 'mhinz/vim-mix-format', { 'for': 'elixir,eelixir' }
 
 "testing
 Plug 'janko-m/vim-test'
