@@ -47,6 +47,9 @@ alias s="git status"
 # Vim
 alias vim="nvim"
 
+# Heroku
+alias h="heroku"
+
 ## User configuration ##
 
 # History
@@ -66,6 +69,7 @@ export PATH="$HOME/.multirust/toolchains/beta/cargo/bin:$PATH"
 export PATH="$HOME/.multirust/toolchains/nightly/cargo/bin:$PATH"
 export PATH="$HOME/.fastlane/bin:$PATH"
 export PATH="$GOPATH/bin:$PATH"
+export PATH="$HOME/.nodenv/bin:$PATH"
 
 # Start rbenv
 if type rbenv > /dev/null; then
@@ -79,6 +83,9 @@ eval "$(nodenv init -)"
 # pyenv
 export PATH="/Users/username/.pyenv:$PATH"
 eval "$(pyenv init -)"
+
+# nodenv
+eval "$(nodenv init -)"
 
 # Default Editor
 if [[ -n $SSH_CONNECTION ]]; then

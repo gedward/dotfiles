@@ -4,7 +4,7 @@ root: ~/code/buildr/sync
 windows:
   - nvim: nvim
   - git:
-      layout: even-vertical
+      layout: even-horizontal
       panes:
         - bin/rails console
         - #
@@ -13,3 +13,4 @@ windows:
       panes:
         - bin/rails server
         - be sidekiq
+        - ngrok http 3000 -subdomain gedward

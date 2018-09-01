@@ -9,6 +9,7 @@ tap "homebrew/services"
 tap "joshuaclayton/formulae"
 tap "thoughtbot/formulae"
 
+brew "bat"
 brew "carthage"
 brew "cmake"
 brew "doxygen"
