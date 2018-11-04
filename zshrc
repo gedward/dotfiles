@@ -80,6 +80,9 @@ fi
 export PATH="$HOME/.nodenv/bin:$PATH"
 eval "$(nodenv init -)"
 
+# Elixir
+export ERL_AFLAGS="-kernel shell_history enabled"
+
 # pyenv
 export PATH="/Users/username/.pyenv:$PATH"
 eval "$(pyenv init -)"
