@@ -193,8 +193,6 @@ augroup END
 "# PLUGIN SETTINGS
 "##############################################################################
 
-let g:mix_format_on_save = 1
-
 "Deoplete
 let g:deoplete#enable_at_startup = 1
 let g:racer_experimental_completer = 1
