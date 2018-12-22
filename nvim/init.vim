@@ -170,11 +170,6 @@ augroup indentation
   autocmd FileType swift set ai sw=4 sts=4 et
 augroup END
 
-augroup neomake_cmds
-  autocmd BufWritePost * Neomake
-  autocmd BufWritePost *.rs Neomake! cargocheck
-augroup END
-
 augroup elm
   autocmd FileType elm map <Leader>t ElmTest<CR>
 augroup END
@@ -232,6 +227,16 @@ let g:alchemist#elixir_erlang_src = "/usr/local/share/src"
 
 "Elm
 let g:elm_format_autosave = 1
+
+"Ale
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_linters = {
+      \ 'elixir': [],
+      \ 'rust': ['rls'],
+      \ 'ruby': ['standardrb']
+      \}
+let g:ale_fixers = {'ruby': ['standardrb']}
+let g:ale_fix_on_save = 1
 
 " Disable netrw
 let g:netrw_dirhistmax = 0
