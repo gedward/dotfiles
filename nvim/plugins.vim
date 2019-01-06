@@ -8,12 +8,12 @@ Plug 'junegunn/fzf.vim'
 Plug 'itchyny/lightline.vim'
 
 "workflow
+Plug 'mcasper/vim-infer-debugger'
 Plug 'FooSoft/vim-argwrap'
 Plug 'airblade/vim-gitgutter'
 Plug 'ap/vim-buftabline'
 Plug 'junegunn/vim-easy-align'
 Plug 'justinmk/vim-sneak'
-Plug 'mcasper/vim-infer-debugger'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'

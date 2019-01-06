@@ -122,6 +122,10 @@ autoload -Uz compinit && compinit
 # Z
 source `brew --prefix`/etc/profile.d/z.sh
 
+# zsh autocomplete
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # Cargo
 if [ -d "$HOME/.cargo" ]; then
   source "$HOME/.cargo/env"
