@@ -1,0 +1,14 @@
+name: closeout
+
+windows:
+  - nvim: nvim
+  - git:
+      layout: even-vertical
+      panes:
+        - #
+  - server:
+      layout: even-vertical
+      panes:
+        - DEMO_ENABLED=true rails s
+        - yarn serve
+  - sidekiq: be sidekiq
