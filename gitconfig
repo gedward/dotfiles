@@ -51,3 +51,5 @@
 [user]
 	name = Gedward Gonzalez
 	email = gonzalezgedward@gmail.com
+[advice]
+	ignoredHook = false
