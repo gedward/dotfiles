@@ -86,6 +86,7 @@ packages=(
   ruby-build
   the_silver_searcher
   tmux
+  tmuxinator
   wget
   z
   zsh-autosuggestions
